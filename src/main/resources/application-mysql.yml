@@ -1,0 +1,25 @@
+
+
+spring:
+  application:
+    name: advancedJpa
+  datasource:
+    url: jdbc:mysql://localhost:3306/advanced_jpa?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    database: mysql
+    properties:
+      
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  port: 3500
+

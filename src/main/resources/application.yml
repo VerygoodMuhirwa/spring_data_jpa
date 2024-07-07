@@ -1,0 +1,26 @@
+
+
+spring:
+  application:
+    name: advancedJpa
+  datasource:
+    url: jdbc:postgresql://localhost:5433/advanced_jpa
+    username: verygood
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  port: 3500
+
